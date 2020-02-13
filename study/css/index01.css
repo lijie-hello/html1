@@ -1,0 +1,378 @@
+* { /*设置所有的margin 和padding 都为0*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+	
+body {
+	background-color: #f4f5f7;
+}
+ul,ol { /*去掉列表的小点*/
+	list-style: none;
+}
+li {
+	list-style: none;
+}
+
+a {
+	font-weight: none;
+	color: #333d49;
+	text-decoration: none;
+}
+a:hover {
+	color: #00a4ff;
+}
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+img {
+	vertical-align: middle;
+}
+/**
+ * [clearfix description]
+ * @type {[type]}
+ * content 内容为小点，尽量不要加空，否则旧版本的浏览器有空隙
+ * display:block;装换成块元素
+ * height: 0; 高度设置为0
+ * visibility: hidden; 隐藏盒子
+ * clear: both; 清除浮动
+ */
+.clearfix:before,.clearfix:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0px;
+	clear: both;
+}
+/**
+ * 	ie6 7 的处理方法
+ *  *代表ie6.7能识别的特殊符号，带有*的属性只有ie6 7才执行
+ *  zoom代表ie6 7 清除浮动的方法
+ */ 
+.clearfix { 
+	
+	*zoom: 1;
+}
+
+/*herder*/
+.herder{
+  padding: 30px 0;
+  width: 1390px;
+  margin:  0 auto;
+}
+.herder .logo{
+  float: left;
+  height: 42px;
+}
+.herder .logo img{
+  display: block;
+  height: 100%;
+}
+
+.herder .nav{
+  float: left;
+  margin-left: 72px;
+}
+.herder .nav li{
+float: left;
+margin-right: 45px;
+}
+
+.herder .nav li a{
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+}
+.herder .search{
+  float: left;
+  margin-left: 58px;
+}
+.herder .search input{
+  font-size: 18px;
+	width: 360px;
+	height: 40px;
+	float: left;
+  border: 1px solid #00a4ff;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.herder .search button{
+  float: left;
+  border: none;
+  height: 40px;
+  width: 50px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-right: 1px ;
+}
+
+.herder .search button img{display: block;width: 100%;height: 100%; border-right: 1px ;}
+.herder .search button:hover{cursor: pointer;}
+.herder .user{ float: left;font-size: 12px; line-height: 42px;margin-left: 32px;}
+.herder .user img{
+  height: 40px;
+  float: left;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+/*广告开始*/
+
+.banner{
+  height: 420px;
+  background-color: #1C036B;
+}
+.banner .inner{
+ height: 100%;
+  position: relative;
+}
+
+.banner .inner .inner-m{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.banner .inner .inner-m ul{
+  height: 100%;
+}
+.banner .inner .inner-m ul li{
+  height: 100%;
+ }
+.banner .inner .inner-m ul li a{
+  display: inline-block;
+  height: 100%;
+}
+.banner .inner .inner-m ul li a img{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.banner .inner .inner-m ol{
+  position: absolute;
+  bottom: 30px;
+  margin: 0 auto  ;
+  left: 50%;
+  margin-left: -50px;
+}
+.banner .inner .inner-m ol li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.banner .inner .inner-m ol li:hover {
+  background-color: #00a4ff;
+}
+.banner .inner .sidebar{
+  position: absolute;left: 0;
+  top: 0;
+  background: #14024B;
+  height: 100%;
+}
+.banner .inner .sidebar li{
+  width: 190px;
+  height: 45px;
+  line-height: 45px ;
+  float:none;
+  padding: 0 15px;
+}
+.banner .inner .sidebar li:hover{
+  background-color: #023DB1;
+}
+.banner .inner .sidebar li a{
+  color: #fff;
+  font-size: 13px;
+}
+.banner .inner .sidebar li span{
+  float: right;
+  color: #fff;
+}
+.banner .inner .course{
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 230px;
+}
+.banner .inner .course h3{
+  background-color: #9BCEEB;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.banner .inner .course .f1{
+  background-color: #fff;
+  padding: 15px 10px;
+}
+.banner .inner .course .f1 li{
+  padding: 10px 0px;
+  border-bottom: 1px #ccc solid;
+}
+.banner .inner .course .f1 li a{
+  display: block;
+} 
+.banner .inner .course .f1 li a p{
+  font-size: 14px;
+} 
+.banner .inner .course .f1 li a span{
+  font-size: 12px;
+  color: #ccc;
+} 
+.banner .inner .course .f1 li a:hover span {
+  color: #00a4ff;
+}
+.banner .inner .course .f1 .all{
+  border: 1px #00a4ff solid;
+  text-align: center;
+  height: 38px;
+  line-height: 38px;
+  font-size: 16px;
+  display: block;
+  margin-top: 15px;
+}
+.banner .inner .course .f1 .all:hover{
+  color: #fff;
+  background: #00a4ff;
+}
+
+/* 精品推荐 */
+.goods{
+  margin-top: 10px;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 2px 2px 2px #ccc
+}
+
+.goods h3{
+  float: left;
+  color: #00a4ff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.goods .language{
+  margin-left: 40px;
+  float: left;
+  color: #ccc;
+  font-size: 15px;
+}
+.goods .language a{
+  display: inline-block;
+  padding: 0 40px;
+  font-size: 15px;
+}
+.goods .modify{
+  color: #00a4ff;
+  font-size: 12px;
+  float: right;
+  margin-right: 30px;
+}
+/* 精品推荐 */
+.box{
+margin-top: 10px;
+}
+.box .title{
+  height: 60px;
+  line-height: 60px;
+}
+.box .title h3{
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+}
+.box .title a{
+  float: right;
+  margin-right: 35px;
+  color: #777;
+  font-size: 12px;
+}
+.box .title a:hover{
+  color: #00a4ff;
+}
+.box ul {width: 1215px;}
+.box ul  li{
+  float: left;
+  width: 227px;
+  margin-right: 15px;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+.box ul  li a{
+  display: block;
+}
+.box ul  li a img{
+  width: 100%;
+  display: block;
+}
+.box ul  li a h4{
+  padding: 28px 20px;
+  font-size: 14px;
+  color: #333;
+}
+.box ul  li a p{
+  font-size: 12px;
+  color: #ccc;
+  padding: 0 20px 23px 20px;
+}
+.box ul  li a p span{
+  color: orange;
+}
+
+/* 尾部 */
+footer{
+background: #fff;
+padding-bottom: 235px;
+}
+footer .w{}
+footer .w .footer-left{
+float: left;
+}
+footer .w .footer-left .logo-btm{
+  padding: 30px 0;
+  display: block;
+}
+footer .w .footer-left .logo-btm img{
+  display: block;
+}
+footer .w .footer-left p{
+  font-size: 12px;
+}
+footer .w .footer-left .app{
+  width: 120px;
+  height: 34px;
+  border: 1px #00a4ff solid;
+  display: block;
+  line-height: 34px;
+  text-align: center;
+  font-size: 16px;
+  color: #00a4ff;
+  margin-top: 20px;
+}
+footer .w .footer-right{
+  float: right;
+}
+footer .w .footer-right ul{
+  margin-left: 102px;
+  float: left;
+}
+footer .w .footer-right ul h3{
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  font-weight: 400;
+}
+footer .w .footer-right ul li{
+  margin-bottom: 10px;
+}
+footer .w .footer-right ul li a{
+  display: block;
+  font-size: 12px;
+}
